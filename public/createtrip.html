@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <title> rideshare </title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <script src="https://js.stripe.com/v3" defer></script>
+	<script src="./index.js" defer ></script>
+	
+    
+</head>
+
+<body>
+    <div id="map"></div>
+
+
+	<nav id="sideNav"> 
+		<div class="sideLinks">
+			<ul>
+				<li href="#">saved places</li>
+				<a href="/user"><li>My orders</li> </a>
+				<li href="#">promo code</li>
+				<li href="#">Get in touch</li>
+			</ul>
+		</div>  
+				
+	</nav>
+			
+	<img src='/Images/profile.png' id="sideMenu" class="profile" alt="Logo" />
+	<button class="order" id="create_trip_btn">Create a Trip</button>
+
+
+
+	<!-- Create Trip Panel -->
+
+
+
+	
+
+	
+
+	<div id="Create_Trip">
+
+			<div class="" id="touring">
+				<div id="trip_process">
+					<div class="tripper">
+						<div class="tripHeader">
+							<div class="header">
+								<div class="headertext">Create a Trip</div>
+								<button class="icon">x</button>
+							</div>
+							<div class="progress">
+								<div class="one1 number">1</div>
+								<div class="two1 number">2</div>
+								<div class="three1 number">3</div>
+								<div class="four1 number">4</div>
+							</div>
+						</div>
+					</div>
+			
+					<div class="tripBodyForCreate">
+						<div class="BodyHeader">
+							<div class="bhead">Trip</div>
+							<button class="change" id="change" onClick="changeLocations()">Change</button>
+						</div>
+			
+						<!-- Take info from the user about the Pick up and Drop off places -->
+			
+						<div class="bodyPlace">
+							<div class="pickup">pickup</div>
+							<input class="query-listener" id="start" placeholder="starting"></input>
+						</div>
+						<hr class="separator" />
+						<div class="bodyPlace">
+							<div class="pickup">drop-off</div>
+							<input class="query-listener" id="end" placeholder="destination"></input>
+						</div>
+						<hr class="separator1" />
+			
+						<!-- Take info from the user about the seats  -->
+			
+						<div class="seatxt">seat number and time</div>
+						<div class="seatTime">
+							<div class="needSeat">Need Seat</div>
+							<div class="seatNumber">
+								<input type="radio" id="1" name="seatNumber" value="1">
+								<label for="1">1</label>
+								<input type="radio" id="2" name="seatNumber" value="2">
+								<label for="2">2</label>
+								<input type="radio" id="3" name="seatNumber" value="3">
+								<label for="3">3</label>
+							</div>
+						</div>
+			
+						<div id="output"></div>
+			
+						<div class="next-1">
+							<button class="backward-key">back</button>
+							<button class="order-2" onClick="PostLocations()">Continue</button>
+						</div>
+			
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+		<!-- Select Car Panel -->
+
+
+
+
+
+		<div id="Select_car">
+
+
+			<div class="tripper">
+				<div class="tripHeader">
+					<div class="header">
+						<div class="headertext">Create a Trip</div>
+						<button class="icon">x</button>
+					</div>
+
+					<!-- Progress Bar -->
+
+					<div class="progress">
+						<div class="one number">1</div>
+						<div class="two number">2</div>
+						<div class="three number">3</div>
+						<div class="four number">4</div>
+					</div>
+				</div>
+
+				<div class="tripBodyForSelect">
+					<div class="BodyHeader">
+						<div class="bhead">Select Car</div>
+					</div>
+
+					<!-- List of cars to select From -->
+
+					<div class="cars">
+						<div class="img">
+							<button class="car_selector" id="sedan_car"><img src="Images/ride-sedan.png" width="50",heigth="50"></button>
+							<div class="carType"> any car </div>
+						</div>
+						<div class="img">
+							<button class="car_selector" id="minivan_car"> <img src="Images/ride-minivan.png"  width="50",heigth="50" ></button>
+							<div class="carType">Mini van</div>
+						</div>
+						<div class="img">
+							<button class="car_selector" id="eng_car"> <img src="Images/car3.jpg"  width="50",heigth="50"></button>
+							<div class="carType">Anycar+Eng <br> Speaker</div>
+						</div>
+					</div>
+
+					<hr class="separator">
+
+					<!-- information about our Trip -->
+
+					<div class="selectDetails">
+						<div class="detailThings">
+							<img src="Images/location.png" width="20" ,heigth="20">
+							<div>
+								<!-- <div class="detail" id="distance">{distance}</div>km</div> -->
+								<input class="detail in" type="text" id="distance" value="12" readonly="readonly">km</div>
+						</div>
+						<div class="detailThings">
+							<img src="Images/darkClock.png" width="20" ,heigth="20">
+							<div class="detail" id="duration">{duration}</div>
+						</div>
+						<div class="detailThings">
+							<img src="Images/dollar.png" width="20" ,heigth="20">
+							<div class="balance" id="balance">{currency}</div>
+						</div>
+					</div>
+
+					<!-- Pick up place and Destination place -->
+
+					<hr class="separator1" />
+					<div class="bodyPlace">
+						<div class="pickup">pickup</div>
+						<div class="destination" id="startselect">startingPoint</div>
+					</div>
+
+					<hr class="separator" />
+					<div class="bodyPlace">
+						<div class="pickup">drop-off </div>
+						<div class="destination" id="endselect">endingPoint</div>
+
+					</div>
+
+					<div class="next-1">
+						<button id="backward-key">back</button>
+						<button class="order-3" id="Continuebutton" onClick="ToConfirmPage()"> Continue </button>
+					</div>
+				</div>
+
+			</div>
+		</div>>
+
+
+
+	<!-- Confirm Ride Page  -->
+
+	<div id="Confirm_ride">
+
+        <div class="tripper">
+            <div class="tripHeader">
+                <div class="header">
+                    <div class="headertext">Step 3</div>
+                    <button class="icon">x</button>
+                </div>
+                <div class="progress">
+                    <div class="one3 number">1</div>
+                    <div class="two3 number">2</div>
+                    <div class="three3 number">3</div>
+                    <div class="four3 number">4</div>
+                </div>
+            </div>
+
+            <div class="tripBodyForConfirm">
+                <div class="BodyHeader">
+                    <div class="bhead">Those are informations on your Trips:</div>
+
+                </div>
+                <div class="bodyPlace">
+                    <div class="Trip_info">
+                        <form action="/confirm" method="post">
+							<label for="pick_up" class="pickup">Pick up place: </label>
+							<!-- <div id="pick_up_info"> Pick up</div><br> -->
+							<input type="text" id="pick_up_info" name="pick_up_info"value="" readonly>
+							<label for="drop_off" class="pickup">Drop off place: </label>
+							<!-- <div id="drop_off_info"> Pick up</div><br> -->
+							<input type="text" id="drop_off_info" name="drop_off_info" value="" readonly>
+							<label for="seats" class="pickup">Number of seats:</label>
+							<!-- <div id="seats_info"> Pick up</div><br> -->
+							<input type="text" id="seats_info" name="seats_info" value="" readonly>
+							<label for="duration" class="pickup">Time duration:</label>
+							<!-- <div id="duration_info"> Pick up</div><br> -->
+							<input type="text" id="duration_info" name="duration_info"  value="" readonly>
+							<label for="car_type" class="pickup">Car type:</label>
+							<!-- <div id="car_type_info"> Pick up</div><br> -->
+							<input type="text" id="car_type_info" name="car_type_info" value="" readonly>
+							<label for="balance" class="pickup">Balance:</label>
+							<!-- <div id="balance_info"> Pick up</div><br> -->
+							<input type="text" id="balance_info" name="balance_info" value="" readonly>
+							<label for="balance" class="pickup">Driver:</label>
+							<!-- <div id="Driver_Name"> Pick up</div><br>   -->
+							<input type="text" id="Driver_Name" name="Driver_Name" value="" readonly>
+						                     
+                    </div>
+
+					</div>
+					<div class="nextt">
+						<button class="backward-Key">back</button>
+						<button class="confirm_btn" type="submit">Confirm </button>
+					</div>
+			</form> 
+			<div class="nextt">
+				<button class="confirm_btn" onclick="purchaseClicked()"> checkout </button>
+				
+			</div>
+            </div>
+			
+
+
+		</div>
+	</div>
+	<script>
+		purchaseClicked = () => {
+   
+   fetch("/checkout", {
+	   method: "POST",
+	   headers: {
+		 "Content-Type": "application/json",
+	   },
+	   // Send along all the information about the items
+	   body: JSON.stringify({
+		 items: [
+		   {
+			 id: 1,
+			 quantity: 1,
+		   },
+		   
+		 ],
+	   }),
+	 })
+	  .then(res => {
+		 if (res.ok) return res.json()
+		 // If there is an error then make sure we catch that
+	   //   return res.json().then(e => console.error(err))
+	   return res.json().then(json =>Promise.reject(json))
+	   })
+	   .then(({ url }) => {
+		 // On success redirect the customer to the returned URL
+		 window.location = url
+		 console.log(url)
+	   })
+	   .catch(e => {
+		 console.error(e.error)
+	   })
+}
+	</script>
+
+</body>
+
+</html>
