@@ -1,1059 +1,1011 @@
 #map {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #trip_process {
-    visibility: hidden;
-    transition: width 2s, height 4s;
+  visibility: hidden;
+  transition: width 2s, height 4s;
 }
 
 .tripper {
-    background-color: #1F56CD;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 40px 20px;
-    border-radius: 10px;
-    opacity: .9;
+  background-color: #1f56cd;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 40px 20px;
+  border-radius: 10px;
+  opacity: 0.9;
 }
 
 .icon {
-    background-color: #1F56CD;
-    opacity: .9;
-    border: none;
-    font-size: 16px;
-    color: white;
+  background-color: #1f56cd;
+  opacity: 0.9;
+  border: none;
+  font-size: 16px;
+  color: white;
 }
 
 .change {
-    border: none;
-    font-size: 16px;
-    color: #1F56CD;
-    background-color: white;
-    font-weight: bolder;
+  border: none;
+  font-size: 16px;
+  color: #1f56cd;
+  background-color: white;
+  font-weight: bolder;
 }
 
 .tripHeader {
-    width: 300px;
-    height: 570px;
+  width: 300px;
+  height: 570px;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    margin: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 20px 20px;
 }
 
 .progress {
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    width: 300px;
-    line-height: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  width: 300px;
+  line-height: 15px;
 }
 
-
-
 .number {
-    height: 30px;
-    width: 30px;
-    padding: 7px;
-    background-color: #3768d1;
-    border-radius: 10px;
-    text-align: center;
+  height: 30px;
+  width: 30px;
+  padding: 7px;
+  background-color: #3768d1;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .tripBodyForCreate {
-    position: absolute;
-    top: 190px;
-    left: 20px;
-    width: 300px;
-    height: 440px;
-    background-color: white;
-    border-radius: 10px;
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  width: 300px;
+  height: 440px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .BodyHeader {
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    margin: 20px 20px;
-    font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  margin: 20px 20px;
+  font-weight: bolder;
 }
 
 .bodyPlace {
-    margin: 0 50px 3px;
+  margin: 0 50px 3px;
 }
 
 .pickup {
-    color: rgb(138, 132, 132);
-    margin-bottom: 5px;
-    padding: 5px;
-    border-radius: 3px;
+  color: rgb(138, 132, 132);
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 .destination {
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 3px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 .separator {
-    width: 150px;
-    position: relative;
-    left: -30px;
-    color: rgb(224, 215, 215);
-    opacity: .2;
+  width: 150px;
+  position: relative;
+  left: -30px;
+  color: rgb(224, 215, 215);
+  opacity: 0.2;
 }
 
 .separator1 {
-    margin-top: 30px;
-    width: 275px;
-    color: rgb(224, 215, 215);
-    opacity: .5;
+  margin-top: 30px;
+  width: 275px;
+  color: rgb(224, 215, 215);
+  opacity: 0.5;
 }
 
 .seatTime {
-    display: flex;
-    margin: 10px 50px;
-    align-items: center;
+  display: flex;
+  margin: 10px 50px;
+  align-items: center;
 }
 
 .seatNumber {
-    padding-left: 20px;
-    display: flex;
-    width: 100px;
-    justify-content: space-around;
+  padding-left: 20px;
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
 }
 
 .seatxt {
-    margin-left: 20px;
-    margin-top: 20px;
-    font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 .needSeat {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .seat {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgb(247, 245, 241);
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(247, 245, 241);
 }
 
 .scheduleTime {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 50px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 50px;
+  align-items: center;
 }
 
 .needSchedule {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .scheduleNumber {
-    padding-left: 20px;
-    display: flex;
-    width: 100px;
-    justify-content: space-around;
+  padding-left: 20px;
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
 }
 
 .next-1 {
-    display: flex;
-    gap: 10px;
-    margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
 }
 
 .back {
-    padding: 5px;
-    margin-top: 10px;
-    width: 60px;
-    background-color: #3768d1;
-    color: white;
+  padding: 5px;
+  margin-top: 10px;
+  width: 60px;
+  background-color: #3768d1;
+  color: white;
 }
 
 .order-2 {
-    padding: 5px;
-    background-color: #3768d1;
-    color: white;
-    width: 330%;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px blue;
+  padding: 5px;
+  background-color: #3768d1;
+  color: white;
+  width: 330%;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px blue;
 }
 
 .order-2:hover {
-    color: #1F56CD;
-    background-color: white;
+  color: #1f56cd;
+  background-color: white;
 }
 
 .cars {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 3px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 3px;
 }
 
 .img:hover {
-    color: #1F56CD;
-    box-shadow: 0 1px 2px green;
-    border-radius: 3px;
-    transition: all 0.3;
+  color: #1f56cd;
+  box-shadow: 0 1px 2px green;
+  border-radius: 3px;
+  transition: all 0.3;
 }
 
 .carType {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .selectDetails {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .detailThings {
-    display: flex;
-    gap: 4px;
-    margin-top: 10px;
-    font-weight: bold;
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .detailThings img {
-    margin-top: 4px;
+  margin-top: 4px;
 }
 
 .order {
-    color: white;
-    width: 200px;
-    height: 50px;
-    padding: 20px;
-    left: 45%;
-    right: 50%;
-    bottom: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #1F56CD;
-    border-radius: 10px;
-    position: absolute;
-    line-height: 10px;
+  color: white;
+  width: 200px;
+  height: 50px;
+  padding: 20px;
+  left: 45%;
+  right: 50%;
+  bottom: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #1f56cd;
+  border-radius: 10px;
+  position: absolute;
+  line-height: 10px;
 }
 
 .profile {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    right: 50px;
-    top: 50px;
-    border: 5px solid #adafb3;
-    border-radius: 50%;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: 50px;
+  top: 50px;
+  border: 5px solid #adafb3;
+  border-radius: 50%;
 }
 
 .query-listener {
-    padding: 7px;
-    border-radius: 6px;
-    width: 210px;
-    ;
+  padding: 7px;
+  border-radius: 6px;
+  width: 210px;
 }
-
 
 /* style the side nav */
 
 #sideNav {
-    width: 250px;
-    height: 60vh;
-    position: fixed;
-    right: -270px;
-    top: 0;
-    margin: 50px 10px 10px 10px;
-    background: #1F56CD;
-    opacity: .9;
-    z-index: 2;
-    border-radius: 15px;
-    transition: .5s;
+  width: 250px;
+  height: 60vh;
+  position: fixed;
+  right: -270px;
+  top: 0;
+  margin: 50px 10px 10px 10px;
+  background: #1f56cd;
+  opacity: 0.9;
+  z-index: 2;
+  border-radius: 15px;
+  transition: 0.5s;
 }
 
 nav ul li {
-    list-style: none;
-    margin: 30px 20px 30px 40px;
-    color: white
+  list-style: none;
+  margin: 30px 20px 30px 40px;
+  color: white;
 }
 
 nav ul li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .sideLinks {
-    position: relative;
-    top: 120px;
+  position: relative;
+  top: 120px;
 }
 
 #sideMenu {
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    right: 90px;
-    top: 70px;
-    z-index: 2;
-    cursor: pointer;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 90px;
+  top: 70px;
+  z-index: 2;
+  cursor: pointer;
 }
-
-
-
 
 /* CSS for select  */
 
-
-
 .tripper {
-    background-color: #1F56CD;
-    position: absolute;
-    left: 0;
-    top: -30px;
-    margin: 40px 20px;
-    border-radius: 10px;
-    opacity: .9;
+  background-color: #1f56cd;
+  position: absolute;
+  left: 0;
+  top: -30px;
+  margin: 40px 20px;
+  border-radius: 10px;
+  opacity: 0.9;
 }
 
 .icon {
-    background-color: #1F56CD;
-    opacity: .9;
-    border: none;
-    font-size: 16px;
-    color: white;
-}
-
-.two.number{
-    color:white;
-    background-color:#3768d1;
-}
-.one1.number{
-    color:#3768d1;
-    background-color:white;
-}
-.three3.number{
-    color:#3768d1;
-    background-color:white;
-}
-.change {    
-    border: none;
-    font-size: 16px;
-    color:#1F56CD;
-    background-color: white;
-    font-weight: bolder;
-}
-
-
-.tripHeader {    
-    width: 300px;
-    height: 550px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    margin: 20px 20px;
-}
-
-.progress {
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    width:300px;
-    line-height: 15px;
-}
-
-.number{
-    height: 30px;
-    width: 30px;
-    padding: 7px;
-    background-color: #3768d1;
-    border-radius: 10px;
-    text-align: center;
-}
-
-
-.car_selector{
-    outline-style: none;
-    border:none;
-}
-
-.tripBodyForSelect {
-    position: absolute;
-    top: 120px;
-    left:0px;
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-
-.BodyHeader {
-    display: flex;
-    justify-content: space-between;
-    color:  black;
-    margin: 20px 20px;
-    font-weight: bolder;    
-}
-
-.bodyPlace {
-    margin: 0 50px 3px;
-}
-.pickup {
-    color: rgb(138, 132, 132);
-    margin-bottom: 5px;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-
-.destination {
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-.separator {
-    width: 150px;
-    position: relative;
-    left: -30px;
-    color: rgb(224, 215, 215);
-    opacity: .2 ;
-}
-
-.separator1 {
-    margin-top: 30px;
-    width: 275px;
-    color: rgb(224, 215, 215);
-    opacity: .5;
-}
-
-
-.seatTime {
-    display: flex;
-    margin: 10px 50px;
-    align-items: center;
-}
-
-
-.seatNumber {
-    padding-left: 20px;
-    display: flex;
-    width: 100px;
-    justify-content: space-around;
-}
-
-
-.seatxt {
-   margin-left: 20px;
-   margin-top: 20px;
-   font-weight: bold;
-}
-
-
-.needSeat {
-    font-weight: bold;
-}
-
-
-.seat {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgb(247, 245, 241);
-}
-
-
-.scheduleTime {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 50px;
-    align-items: center;
-}
-
-
-.needSchedule {
-    font-weight: bold;
-}
-
-
-.scheduleNumber {
-    padding-left: 20px;
-    display: flex;
-    width: 100px;
-    justify-content: space-around;
-}
-
-
-.next-1{
-    display: flex;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-
-.back{
-    padding: 5px;
-    margin-top: 10px;
-    width: 60px;
-    background-color: #3768d1;
-    color: white;
-}
-
-
-.order-3 {
-    padding: 5px;
-    background-color: #3768d1;
-    color: white;
-    width: 330%;
-    border-radius: 20px;
-    box-shadow: 0 1px 2px blue;
-}
-
-.order-3:hover {
-    color: #1F56CD;
-    background-color: white;
-}
-
-#link {
-    padding: 5px 90px;
-    text-decoration: none;
-    color: white;
-    font-family: "Helvetica Neue";
-    font-size: 14px;
-}
-.cars{
-    display:flex;
-    justify-content: space-around;
-    border-radius:3px;
-}
-
-
-.img:hover {
-
-    color:#1F56CD;
-    box-shadow: 0 1px 2px green;
-    border-radius:3px;
-    transition: all 0.3;
-}
-
-
-.carType{
-    font-weight: bold;
-}
-
-
-.selectDetails{
-    display:flex;
-    justify-content: space-around;
-}
-
-
-.detailThings{
-    display: flex;
-    gap: 4px;
-    margin-top:10px;
-    font-weight:bold;
-}
-
-
-.detailThings img{
-    margin-top:4px;
-}
-
-
-.order {
-    color:white;
-    width:200px;
-    height: 50px;
-    padding: 20px;
-    left: 45%;
-    right: 50%;
-    bottom: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #1F56CD;
-    border-radius: 10px;
-    position: absolute;
-    line-height: 10px;
-}
-
-
-.profile {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    right: 50px;
-    top: 50px;
-    border: 5px solid #adafb3;
-    border-radius: 50%;
-}
-
-
-.radio{
-    font-size: 20px;
-    font-weight: 500;
-    display:inline-block;
-    position: relative;
-    padding-left: 30px;
-}
-
-
-.nextt{
-    display: flex;
-    gap: 10px;
-    margin-top:60px;
-}
-
-
-.order2{
-    padding:0px;
-    background-color: #3768d1;
-    color:white;
-    width:75%;
-    height:50px;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px blue;
-}
-
-
-
-.order2:hover{
-    color:#1F56CD;
-    background-color: white;
-}
-
-
-.two{
-    background-color: #b0c6f5;
-    color: #1F56CD;
-}
-
-
-.detail{
-    display: inline-block;
-}
-
-
-
-
-
-
-/* CSS For Confirm Ride */
-.tripBodyForConfirm {
-    position: absolute;
-    top: 120px;
-    left: 0px;
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    border-radius: 10px;
-}
-.tripper {
-    background-color: #1F56CD;
-    position: absolute;
-    left: 0;
-    top: -30px;
-    margin: 40px 20px;
-    border-radius: 10px;
-    opacity: .9;
-}
-
-.icon {
-    background-color: #1F56CD;
-    opacity: .9;
-    border: none;
-    font-size: 16px;
-    color: white;
-}
-
-.change {
-    border: none;
-    font-size: 16px;
-    color: #1F56CD;
-    background-color: white;
-    font-weight: bolder;
-}
-
-.tripHeader {
-    width: 300px;
-    height: 550px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    margin: 20px 20px;
-}
-
-.progress {
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    width: 300px;
-    line-height: 15px;
-}
-
-.number {
-    height: 30px;
-    width: 30px;
-    padding: 7px;
-    background-color: #3768d1;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.tripBody {
-    position: absolute;
-    top: 120px;
-    left: 0px;
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.BodyHeader {
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    margin: 20px 20px;
-    font-weight: bolder;
-}
-
-.bodyPlace {
-    margin: 0 50px 3px;
-}
-
-.pickup {
-    color: rgb(99, 7, 7);
-    margin-bottom: 5px;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-.destination {
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-.separator {
-    width: 150px;
-    position: relative;
-    left: -30px;
-    color: rgb(224, 215, 215);
-    opacity: .2;
-}
-
-.separator1 {
-    margin-top: 30px;
-    width: 275px;
-    color: rgb(224, 215, 215);
-    opacity: .5;
-}
-
-.seatTime {
-    display: flex;
-    margin: 10px 50px;
-    align-items: center;
-}
-
-.seatNumber {
-    padding-left: 20px;
-    display: flex;
-    width: 100px;
-    justify-content: space-around;
-}
-
-.seatxt {
-    margin-left: 20px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-.needSeat {
-    font-weight: bold;
-}
-
-.seat {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgb(247, 245, 241);
-}
-
-.scheduleTime {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 50px;
-    align-items: center;
-}
-
-.needSchedule {
-    font-weight: bold;
-}
-
-.scheduleNumber {
-    padding-left: 20px;
-    display: flex;
-    width: 100px;
-    justify-content: space-around;
-}
-
-.next-1 {
-    display: flex;
-    gap: 10px;
-    margin-top: 100px;
-}
-
-.back {
-    padding: 5px;
-    margin-top: 10px;
-    width: 60px;
-    background-color: #3768d1;
-    color: white;
-}
-
-.order-2 {
-    padding: 5px;
-    background-color: #3768d1;
-    color: white;
-    width: 75%;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px blue;
-}
-
-.order-2:hover {
-    color: #1F56CD;
-    background-color: white;
-}
-
-.cars {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 3px;
-}
-
-.img:hover {
-    color: #1F56CD;
-    box-shadow: 0 1px 2px green;
-    border-radius: 3px;
-    transition: all 0.3;
-}
-
-.carType {
-    font-weight: bold;
-}
-
-.selectDetails {
-    display: flex;
-    justify-content: space-around;
-}
-
-.detailThings {
-    display: flex;
-    gap: 4px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.detailThings img {
-    margin-top: 4px;
-}
-
-.order {
-    color: white;
-    width: 200px;
-    height: 50px;
-    padding: 20px;
-    left: 45%;
-    right: 50%;
-    bottom: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #1F56CD;
-    border-radius: 10px;
-    position: absolute;
-    line-height: 10px;
-}
-
-.profile {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    right: 50px;
-    top: 50px;
-    border: 5px solid #adafb3;
-    border-radius: 50%;
-}
-
-.radio {
-    font-size: 20px;
-    font-weight: 500;
-    display: inline-block;
-    position: relative;
-    padding-left: 30px;
-
-}
-
-.nextt {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.order2:hover {
-    color: #1F56CD;
-    background-color: white;
-    background-color: #3768d1;
+  background-color: #1f56cd;
+  opacity: 0.9;
+  border: none;
+  font-size: 16px;
+  color: white;
 }
 
 .two.number {
-    color: rgb(18, 18, 214);
-    background-color: white;
+  color: white;
+  background-color: #3768d1;
+}
+.one1.number {
+  color: #3768d1;
+  background-color: white;
+}
+.three3.number {
+  color: #3768d1;
+  background-color: white;
+}
+.change {
+  border: none;
+  font-size: 16px;
+  color: #1f56cd;
+  background-color: white;
+  font-weight: bolder;
+}
+
+.tripHeader {
+  width: 300px;
+  height: 550px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 20px 20px;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  width: 300px;
+  line-height: 15px;
+}
+
+.number {
+  height: 30px;
+  width: 30px;
+  padding: 7px;
+  background-color: #3768d1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.car_selector {
+  outline-style: none;
+  border: none;
+}
+
+.tripBodyForSelect {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.BodyHeader {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  margin: 20px 20px;
+  font-weight: bolder;
+}
+
+.bodyPlace {
+  margin: 0 50px 3px;
+}
+.pickup {
+  color: rgb(138, 132, 132);
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.destination {
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.separator {
+  width: 150px;
+  position: relative;
+  left: -30px;
+  color: rgb(224, 215, 215);
+  opacity: 0.2;
+}
+
+.separator1 {
+  margin-top: 30px;
+  width: 275px;
+  color: rgb(224, 215, 215);
+  opacity: 0.5;
+}
+
+.seatTime {
+  display: flex;
+  margin: 10px 50px;
+  align-items: center;
+}
+
+.seatNumber {
+  padding-left: 20px;
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+}
+
+.seatxt {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.needSeat {
+  font-weight: bold;
+}
+
+.seat {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(247, 245, 241);
+}
+
+.scheduleTime {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 50px;
+  align-items: center;
+}
+
+.needSchedule {
+  font-weight: bold;
+}
+
+.scheduleNumber {
+  padding-left: 20px;
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+}
+
+.next-1 {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.back {
+  padding: 5px;
+  margin-top: 10px;
+  width: 60px;
+  background-color: #3768d1;
+  color: white;
+}
+
+.order-3 {
+  padding: 5px;
+  background-color: #3768d1;
+  color: white;
+  width: 330%;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px blue;
+}
+
+.order-3:hover {
+  color: #1f56cd;
+  background-color: white;
+}
+
+#link {
+  padding: 5px 90px;
+  text-decoration: none;
+  color: white;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+}
+.cars {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 3px;
+}
+
+.img:hover {
+  color: #1f56cd;
+  box-shadow: 0 1px 2px green;
+  border-radius: 3px;
+  transition: all 0.3;
+}
+
+.carType {
+  font-weight: bold;
+}
+
+.selectDetails {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detailThings {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.detailThings img {
+  margin-top: 4px;
+}
+
+.order {
+  color: white;
+  width: 200px;
+  height: 50px;
+  padding: 20px;
+  left: 45%;
+  right: 50%;
+  bottom: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #1f56cd;
+  border-radius: 10px;
+  position: absolute;
+  line-height: 10px;
+}
+
+.profile {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: 50px;
+  top: 50px;
+  border: 5px solid #adafb3;
+  border-radius: 50%;
+}
+
+.radio {
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+
+.nextt {
+  display: flex;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.order2 {
+  padding: 0px;
+  background-color: #3768d1;
+  color: white;
+  width: 75%;
+  height: 50px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px blue;
+}
+
+.order2:hover {
+  color: #1f56cd;
+  background-color: white;
+}
+
+.two {
+  background-color: #b0c6f5;
+  color: #1f56cd;
+}
+
+.detail {
+  display: inline-block;
+}
+
+/* CSS For Confirm Ride */
+.tripBodyForConfirm {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+.tripper {
+  background-color: #1f56cd;
+  position: absolute;
+  left: 0;
+  top: -30px;
+  margin: 40px 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.icon {
+  background-color: #1f56cd;
+  opacity: 0.9;
+  border: none;
+  font-size: 16px;
+  color: white;
+}
+
+.change {
+  border: none;
+  font-size: 16px;
+  color: #1f56cd;
+  background-color: white;
+  font-weight: bolder;
+}
+
+.tripHeader {
+  width: 300px;
+  height: 550px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 20px 20px;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  width: 300px;
+  line-height: 15px;
+}
+
+.number {
+  height: 30px;
+  width: 30px;
+  padding: 7px;
+  background-color: #3768d1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tripBody {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.BodyHeader {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  margin: 20px 20px;
+  font-weight: bolder;
+}
+
+.bodyPlace {
+  margin: 0 50px 3px;
+}
+
+.pickup {
+  color: rgb(99, 7, 7);
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.destination {
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.separator {
+  width: 150px;
+  position: relative;
+  left: -30px;
+  color: rgb(224, 215, 215);
+  opacity: 0.2;
+}
+
+.separator1 {
+  margin-top: 30px;
+  width: 275px;
+  color: rgb(224, 215, 215);
+  opacity: 0.5;
+}
+
+.seatTime {
+  display: flex;
+  margin: 10px 50px;
+  align-items: center;
+}
+
+.seatNumber {
+  padding-left: 20px;
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+}
+
+.seatxt {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.needSeat {
+  font-weight: bold;
+}
+
+.seat {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(247, 245, 241);
+}
+
+.scheduleTime {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 50px;
+  align-items: center;
+}
+
+.needSchedule {
+  font-weight: bold;
+}
+
+.scheduleNumber {
+  padding-left: 20px;
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+}
+
+.next-1 {
+  display: flex;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.back {
+  padding: 5px;
+  margin-top: 10px;
+  width: 60px;
+  background-color: #3768d1;
+  color: white;
+}
+
+.order-2 {
+  padding: 5px;
+  background-color: #3768d1;
+  color: white;
+  width: 75%;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px blue;
+}
+
+.order-2:hover {
+  color: #1f56cd;
+  background-color: white;
+}
+
+.cars {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 3px;
+}
+
+.img:hover {
+  color: #1f56cd;
+  box-shadow: 0 1px 2px green;
+  border-radius: 3px;
+  transition: all 0.3;
+}
+
+.carType {
+  font-weight: bold;
+}
+
+.selectDetails {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detailThings {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.detailThings img {
+  margin-top: 4px;
+}
+
+.order {
+  color: white;
+  width: 200px;
+  height: 50px;
+  padding: 20px;
+  left: 45%;
+  right: 50%;
+  bottom: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #1f56cd;
+  border-radius: 10px;
+  position: absolute;
+  line-height: 10px;
+}
+
+.profile {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: 50px;
+  top: 50px;
+  border: 5px solid #adafb3;
+  border-radius: 50%;
+}
+
+.radio {
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+
+.nextt {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.order2:hover {
+  color: #1f56cd;
+  background-color: white;
+  background-color: #3768d1;
+}
+
+.two.number {
+  color: rgb(18, 18, 214);
+  background-color: white;
 }
 
 .Trip_info {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .confirm_btn {
-    padding: 5px;
-    background-color: #3768d1;
-    color: white;
-    width: 330%;
-    border-radius: 8px;
-    box-shadow: 0 1px 2px blue;
-    transition: all 0.;
+  padding: 5px;
+  background-color: #3768d1;
+  color: white;
+  width: 330%;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px blue;
+  transition: all 0;
 }
 
 .confirm_btn:hover {
-    color: #1F56CD;
-    background-color: white;
+  color: #1f56cd;
+  background-color: white;
 }
 
 /* For Drivers on map */
 
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-      }
-	  .marker {
-		background-image: url('taxi.png');
-		background-size: cover;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		cursor: pointer;
-		}
-		.mapboxgl-popup {
-			max-width: 100px;
-		}
-
-		.mapboxgl-popup-content {
-	
-			align-items: center;
-			text-align: center;
-			font-family: 'Open Sans', sans-serif;
-    		padding: 0px;		
-			background-color: gray;
-			color:white;	
-			}
-
-		.profile{
-			border-radius: 50%;
-			width: 40px;
-            height: 40px;
-			}
-		.driver{
-			display:flex;
-			align-items: center;
-		}
-#Confirm_ride{
-	visibility: hidden;
-}
-#Select_car{
-	visibility: hidden;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-#Create_Trip{
-	visibility: hidden;
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.marker {
+  background-image: url("taxi.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mapboxgl-popup {
+  max-width: 100px;
 }
 
-.in{
-    margin:0 5px;
-    width: 40px;
-    border: none;
-    font-weight: bold;
+.mapboxgl-popup-content {
+  align-items: center;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 0px;
+  background-color: gray;
+  color: white;
+}
 
+.profile {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.driver {
+  display: flex;
+  align-items: center;
+}
+#Confirm_ride {
+  visibility: hidden;
+}
+#Select_car {
+  visibility: hidden;
+}
+
+#Create_Trip {
+  visibility: hidden;
+}
+
+.in {
+  margin: 0 5px;
+  width: 40px;
+  border: none;
+  font-weight: bold;
 }
 
 /* For Drivers on map */
 
-      body {
-        margin: 0;
-        padding: 0;
-      }
+body {
+  margin: 0;
+  padding: 0;
+}
 
-      #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-      }
-	  .marker {
-		background-image: url('taxi.png');
-		background-size: cover;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		cursor: pointer;
-		}
-		.mapboxgl-popup {
-			max-width: 100px;
-		}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.marker {
+  background-image: url("taxi.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mapboxgl-popup {
+  max-width: 100px;
+}
 
-		.mapboxgl-popup-content {
-	
-			align-items: center;
-			text-align: center;
-			font-family: 'Open Sans', sans-serif;
-    		padding: 0px;		
-			background-color: gray;
-			color:white;	
-			}
+.mapboxgl-popup-content {
+  align-items: center;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 0px;
+  background-color: gray;
+  color: white;
+}
 
-            .profile {
-                border-radius: 50%;
-                width: 60px;
-                position: relative;
-                right: 1px;
-                top: -10px;
-              }
-		.driver{
-			display:flex;
-			align-items: center;
-		}
+.profile {
+  border-radius: 50%;
+  width: 60px;
+  position: relative;
+  right: 1px;
+  top: -10px;
+}
+.driver {
+  display: flex;
+  align-items: center;
+}
 
-        .Trip_info input{
-            border: none;
-        }
+.Trip_info input {
+  border: none;
+}

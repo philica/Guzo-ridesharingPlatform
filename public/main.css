@@ -1,68 +1,71 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-
 * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
-  font-family: 'Bebas Neue', cursive;
-  
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
 }
 
-body, html {
-	height: 100%;
-	font-family: 'Bebas Neue', cursive !important;
+body,
+html {
+  height: 100%;
+  font-family: "Bebas Neue", cursive !important;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Ubuntu-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+  font-family: Ubuntu-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
 
 a:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
   color: #403866;
 }
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
 }
 
 p {
-	font-family: 'Bebas Neue', cursive;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
 }
 
-ul, li {
-	margin: 0px;
-	list-style-type: none;
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
 }
-
 
 /*---------------------------------------------*/
 input {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 textarea {
@@ -70,19 +73,36 @@ textarea {
   border: none;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: transparent !important;
 }
 
-input::-webkit-input-placeholder { color: #8f8fa1;}
-input:-moz-placeholder { color: #8f8fa1;}
-input::-moz-placeholder { color: #8f8fa1;}
-input:-ms-input-placeholder { color: #8f8fa1;}
+input::-webkit-input-placeholder {
+  color: #8f8fa1;
+}
+input:-moz-placeholder {
+  color: #8f8fa1;
+}
+input::-moz-placeholder {
+  color: #8f8fa1;
+}
+input:-ms-input-placeholder {
+  color: #8f8fa1;
+}
 
-textarea::-webkit-input-placeholder { color: #8f8fa1;}
-textarea:-moz-placeholder { color: #8f8fa1;}
-textarea::-moz-placeholder { color: #8f8fa1;}
-textarea:-ms-input-placeholder { color: #8f8fa1;}
+textarea::-webkit-input-placeholder {
+  color: #8f8fa1;
+}
+textarea:-moz-placeholder {
+  color: #8f8fa1;
+}
+textarea::-moz-placeholder {
+  color: #8f8fa1;
+}
+textarea:-ms-input-placeholder {
+  color: #8f8fa1;
+}
 
 label {
   display: block;
@@ -91,30 +111,27 @@ label {
 
 /*---------------------------------------------*/
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 16px;
   color: #827ffe;
   line-height: 1.4;
 }
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
@@ -125,7 +142,7 @@ iframe {
 }
 
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -136,12 +153,11 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  
+
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
 }
-
 
 .wrap-login100 {
   width: 390px;
@@ -150,19 +166,17 @@ iframe {
   position: relative;
 }
 
-
 /*==================================================================
 [ Form ]*/
-.logo{
+.logo {
   height: 50px;
   width: 50px;
-  position:relative;
-  top:10px;
-  left:10px;
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 
-
-.signup{
+.signup {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -174,7 +188,7 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 30px;
   color: #403866;
   line-height: 1.2;
@@ -184,8 +198,6 @@ iframe {
   width: 100%;
   display: block;
 }
-
-
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -198,10 +210,9 @@ iframe {
   border-radius: 3px;
 }
 
-
 /*---------------------------------------------*/
 .input100 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: #403866;
   line-height: 1.2;
   font-size: 18px;
@@ -263,7 +274,6 @@ iframe {
   transform: scale(1);
 }
 
-
 /*==================================================================
 [ Restyle Checkbox ]*/
 
@@ -272,7 +282,7 @@ iframe {
 }
 
 .label-checkbox100 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 16px;
   color: #999999;
   line-height: 1.2;
@@ -285,7 +295,7 @@ iframe {
 
 .label-checkbox100::before {
   content: "\f00c";
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 13px;
   color: transparent;
 
@@ -315,7 +325,6 @@ iframe {
   color: #827ffe;
 }
 
-
 /*------------------------------------------------------------------
 [ Button ]*/
 .container-login100-form-btn {
@@ -329,7 +338,7 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -358,7 +367,6 @@ iframe {
   background-color: #403866;
 }
 
-
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 
@@ -383,7 +391,7 @@ iframe {
   right: 12px;
   pointer-events: none;
 
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: #c80000;
   font-size: 14px;
   line-height: 1.4;
@@ -400,7 +408,7 @@ iframe {
 
 .alert-validate::after {
   content: "\f12a";
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   display: block;
   position: absolute;
   color: #c80000;
@@ -426,7 +434,7 @@ iframe {
   }
 }
 
-a{
+a {
   text-decoration: none;
 }
 
